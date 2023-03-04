@@ -4,6 +4,7 @@
   "description": "F8 blog",
   "main": "src/index.js",
   "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --write 'src/**/*.{js,json,scss}'",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,9 +27,11 @@
   "dependencies": {
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
+    "mongoose": "^6.9.1",
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "prettier": "^2.8.4"
   }
 }
